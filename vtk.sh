@@ -1,0 +1,19 @@
+cmake -DBUILD_SHARED_LIBS=ON \
+	  -DBUILD_TESTING=OFF \
+	  -DBUILD_EXAMPLES=OFF \
+	  -DModule_vtkGUISupportQt=ON \
+	  -DModule_vtkGUISupportQtOpenGL=ON \
+	  -DModule_vtkRenderingQt=ON \
+	  -DModule_vtkViewsQt=ON \
+	  -DQt5Core_DIR=/home/sar/anaconda2/lib/cmake/Qt5Core \
+	  -DQt5Gui_DIR=/home/sar/anaconda2/lib/cmake/Qt5Gui \
+	  -DQt5Sql_DIR=/home/sar/anaconda2/lib/cmake/Qt5Sql \
+	  -DQt5UiPlugin_DIR=/home/sar/anaconda2/lib/cmake/Qt5UiPlugin \
+	  -DQt5Widgets_DIR=/home/sar/anaconda2/lib/cmake/Qt5Widgets \
+	  -DQt5X11Extras_dir=/home/sar/anaconda2/lib/cmake/Qt5X11Extras \
+	  -DQt5_DIR=/home/sar/anaconda2/lib/cmake/Qt5 \
+	  -DVTK_Group_Qt=ON \
+	  -DVTK_Group_Rendering=ON \
+	  -DVTK_Group_StandAlone=ON \
+	  -DVTK_QT_VERSION=5 \
+	  ..
